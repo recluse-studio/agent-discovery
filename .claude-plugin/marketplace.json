@@ -6,9 +6,10 @@
   "plugins": [
     {
       "name": "recluse-studio",
-      "source": "./",
+      "source": "./plugins/recluse-studio",
       "description": "Search and read Recluse Studio\u2019s public articles with source passages and citations.",
-      "version": "0.1.0"
+      "version": "0.1.1",
+      "license": "MIT"
     }
   ],
   "description": "Official Recluse Studio archive tools and source-reading skill."

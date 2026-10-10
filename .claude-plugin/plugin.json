@@ -1,11 +1,17 @@
 {
   "name": "recluse-studio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Search and read Recluse Studio's published archive with source passages and original attribution.",
   "author": {
     "name": "Drew Wiberg",
     "url": "https://recluse.studio"
   },
   "homepage": "https://recluse-agent-discovery.drewwiberg.chatgpt.site",
-  "repository": "https://github.com/recluse-studio/agent-discovery"
+  "repository": "https://github.com/recluse-studio/agent-discovery",
+  "license": "MIT",
+  "icon": "./logo.png",
+  "privacyPolicyUrl": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/privacy",
+  "supportUrl": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/support",
+  "termsOfServiceUrl": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/terms",
+  "documentationUrl": "https://github.com/recluse-studio/agent-discovery#readme"
 }

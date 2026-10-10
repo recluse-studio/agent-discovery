@@ -75,7 +75,7 @@ The Node server checks Host and Origin. Both HTTP transports limit request bodie
 
 The local live check starts and closes a temporary HTTP service. The deployed check uses the public HTTPS endpoint without credentials. Evidence is saved under evidence/.
 
-The package command writes portable and Claude ZIPs plus submission metadata into a new outputs/plugin-packages/remote-* directory. ZIPs contain connection manifests and the research skill.
+The package command writes portable and Claude ZIPs plus submission metadata into a new outputs/plugin-packages/remote-* directory. ZIPs contain connection manifests, the research skill, the listing icon, and the MIT license. The Claude marketplace installs the dependency-free bundle in plugins/recluse-studio/.
 
 ## Publication
 
@@ -86,3 +86,7 @@ Provider directory review is separate from this public release. Submission mater
 ## Support
 
 [Open an issue](https://github.com/recluse-studio/agent-discovery/issues/new) for connection or attribution errors. Use [private vulnerability reporting](https://github.com/recluse-studio/agent-discovery/security/advisories/new) for security issues.
+
+## License
+
+The plugin software and its documentation use the [MIT license](LICENSE). Retrieved articles and their illustrations retain their existing copyrights and attribution requirements.

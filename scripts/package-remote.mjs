@@ -27,6 +27,8 @@ export async function packageRemote(endpoint, outputRoot = resolve(root, "output
   for (const format of ["portable", "claude"]) {
     const folder = join(output, format);
     await mkdir(folder);
+    await cp(join(root, "LICENSE"), join(folder, "LICENSE"));
+    await cp(join(root, "submissions/logo.png"), join(folder, "logo.png"));
     await cp(join(root, "skills"), join(folder, "skills"), { recursive: true });
     if (format === "portable") {
       await cp(join(root, "plugin.json"), join(folder, "plugin.json"));
@@ -36,7 +38,7 @@ export async function packageRemote(endpoint, outputRoot = resolve(root, "output
       await cp(join(root, ".claude-plugin/plugin.json"), join(folder, ".claude-plugin/plugin.json"));
       await writeFile(join(folder, ".mcp.json"), JSON.stringify(configs.claude, null, 2) + "\n");
     }
-    const files = format === "portable" ? ["plugin.json", "mcp.json", "skills"] : [".claude-plugin", ".mcp.json", "skills"];
+    const files = format === "portable" ? ["plugin.json", "mcp.json", "skills", "LICENSE", "logo.png"] : [".claude-plugin", ".mcp.json", "skills", "LICENSE", "logo.png"];
     execFileSync("zip", ["-q", "-r", join(output, "recluse-studio-" + format + ".zip"), ...files], { cwd: folder });
   }
   const submission = JSON.parse(await readFile(join(root, "submission.json"), "utf8"));
