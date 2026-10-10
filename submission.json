@@ -1,0 +1,27 @@
+{
+  "name": "Recluse Studio",
+  "version": "0.1.0",
+  "description": "Search Recluse Studio's published research and build reports, read relevant passages, and follow related articles with original attribution.",
+  "website": "https://recluse-agent-discovery.drewwiberg.chatgpt.site",
+  "authentication": "none",
+  "data_access": "Public Recluse Studio articles and their curated topic index.",
+  "data_handling": "The service keeps public article text in an in-memory cache. Application code does not persist tool arguments, reader identities, or conversations. Hosting access logs depend on the selected hosting configuration.",
+  "tools": [
+    "search",
+    "fetch",
+    "latest_posts",
+    "related_posts"
+  ],
+  "example_prompts": [
+    "Find Recluse Studio's articles about agent memory and explain the differences between their approaches, citing each post.",
+    "Read Recluse Studio's Donner B1 review and identify what the source accounts say about the controls.",
+    "Find Recluse Studio's work on knowledge management, then retrieve articles connected through the same curated topics."
+  ],
+  "review_state": "public release preparation; provider review not submitted",
+  "endpoint": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/mcp",
+  "repository": "https://github.com/recluse-studio/agent-discovery",
+  "support_url": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/support",
+  "privacy_policy_url": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/privacy",
+  "terms_url": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/terms",
+  "logo_url": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/favicon.svg"
+}

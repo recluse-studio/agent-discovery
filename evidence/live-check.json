@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-10T14:19:35.200Z",
+  "archive_retrieved_at": "2026-10-10T14:19:34.927Z",
+  "archive_source": "https://recluse.studio/blog/semantic-model.json",
+  "article_count": 194,
+  "tools": [
+    "search",
+    "fetch",
+    "latest_posts",
+    "related_posts"
+  ],
+  "transport": "official MCP client over local Streamable HTTP",
+  "checks": [
+    {
+      "query": "Donner B1",
+      "title": "Donner B1: The Controls Change the Verdict",
+      "url": "https://recluse.studio/blog/donner-b1-the-controls-change-the-verdict/",
+      "author": "Drew Wiberg",
+      "date": "2026-10-09",
+      "matched_passages": 3
+    },
+    {
+      "query": "agent memory",
+      "title": "Agent Memory Now Includes Retrieval Decisions and Learned Procedures",
+      "url": "https://recluse.studio/blog/agent-memory-retrieval-decisions-learned-procedures/",
+      "author": "Drew Wiberg",
+      "date": "2026-07-28",
+      "matched_passages": 3
+    },
+    {
+      "query": "knowledge management",
+      "title": "Information Governance and Knowledge Management Are Related Work",
+      "url": "https://recluse.studio/blog/km-information-governance-and-knowledge-management/",
+      "author": "Drew Wiberg",
+      "date": "2026-08-26",
+      "matched_passages": 3
+    }
+  ]
+}

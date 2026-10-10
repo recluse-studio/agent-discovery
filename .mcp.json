@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "recluse-studio": {
+      "type": "http",
+      "url": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/mcp"
+    }
+  }
+}

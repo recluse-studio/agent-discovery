@@ -1,0 +1,15 @@
+{
+  "name": "recluse-studio",
+  "owner": {
+    "name": "Drew Wiberg"
+  },
+  "plugins": [
+    {
+      "name": "recluse-studio",
+      "source": "./",
+      "description": "Search and read Recluse Studio\u2019s public articles with source passages and citations.",
+      "version": "0.1.0"
+    }
+  ],
+  "description": "Official Recluse Studio archive tools and source-reading skill."
+}

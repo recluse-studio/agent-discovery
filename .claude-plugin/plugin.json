@@ -1,0 +1,11 @@
+{
+  "name": "recluse-studio",
+  "version": "0.1.0",
+  "description": "Search and read Recluse Studio's published archive with source passages and original attribution.",
+  "author": {
+    "name": "Drew Wiberg",
+    "url": "https://recluse.studio"
+  },
+  "homepage": "https://recluse-agent-discovery.drewwiberg.chatgpt.site",
+  "repository": "https://github.com/recluse-studio/agent-discovery"
+}

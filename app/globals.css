@@ -1,0 +1,20 @@
+@import "tailwindcss";
+:root { --font-min: 12px; --font-body: 17px; color: #202320; background: #f5f3ed; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: var(--font-body); }
+* { box-sizing: border-box; }
+body { margin: 0; }
+header, main, footer { max-width: 960px; margin: auto; padding: 28px; }
+header { display: flex; justify-content: space-between; gap: 24px; font-size: 14px; border-bottom: 1px solid #cbcfc6; }
+main { min-height: 70vh; padding-top: 64px; padding-bottom: 64px; }
+h1 { font-size: clamp(36px, 7vw, 64px); font-weight: 500; line-height: 1.08; letter-spacing: -0.035em; max-width: 760px; margin: 12px 0 28px; }
+h2 { font-size: 24px; font-weight: 500; margin-top: 38px; }
+p, li { line-height: 1.6; max-width: 760px; }
+a { color: #294a40; text-decoration: underline; text-underline-offset: 4px; }
+code, pre { font: inherit; font-size: 15px; overflow-wrap: anywhere; }
+pre { white-space: pre-wrap; padding: 22px; border: 1px solid #c4cbc3; background: #eaeee7; line-height: 1.55; }
+.eyebrow, footer { font-size: 14px; }
+.eyebrow { color: #566257; }
+.tools { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin: 38px 0; }
+.tools section { border-top: 1px solid #c4cbc3; }
+.tools h2 { margin-top: 18px; }
+footer { display: flex; flex-wrap: wrap; gap: 24px; border-top: 1px solid #cbcfc6; }
+@media (max-width: 600px) { header, main, footer { padding-left: 20px; padding-right: 20px; } .tools { grid-template-columns: 1fr; gap: 8px; } header { flex-direction: column; gap: 12px; } }

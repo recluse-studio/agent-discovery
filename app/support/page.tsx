@@ -1,0 +1,3 @@
+export default function Support() {
+  return <><h1>Support</h1><p><a href="https://github.com/recluse-studio/agent-discovery/issues/new">Open an issue in the Recluse Studio repository</a> for connection errors, missing public articles, or incorrect attribution. Include the tool name, article URL when relevant, and the time of the failure.</p><p>Keep passwords, access tokens, and private conversation text out of public issues.</p><p>For a security issue, use <a href="https://github.com/recluse-studio/agent-discovery/security/advisories/new">private vulnerability reporting</a>.</p><p><a href="https://github.com/recluse-studio/agent-discovery#readme">Installation and tool documentation</a> · <a href="/health">Service status</a></p></>;
+}

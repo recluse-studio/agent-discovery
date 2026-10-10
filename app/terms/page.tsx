@@ -1,0 +1,3 @@
+export default function Terms() {
+  return <><h1>Use and attribution</h1><p>Updated 10 October 2026.</p><p>This connector provides read-only access to Recluse Studio’s public articles. Use its search and retrieval tools to find sources and support answers with the published text.</p><p>When quoting or discussing an article, retain its author attribution and cite its canonical article URL. Article copyrights remain with their respective rights holders. Access through this connector does not change the rights attached to an article or its linked sources.</p><p>Tool inputs and response sizes have documented bounds. Keep requests within those bounds. Report service problems through the <a href="/support">support page</a>.</p></>;
+}

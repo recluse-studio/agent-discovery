@@ -1,0 +1,69 @@
+{
+  "positive": [
+    {
+      "prompt": "Find Recluse Studio\u2019s Donner B1 review and read a passage about its controls.",
+      "tools": [
+        "search",
+        "fetch"
+      ],
+      "expected": "Returns the Donner B1 article with Drew Wiberg\u2019s byline and its canonical URL."
+    },
+    {
+      "prompt": "Find Recluse Studio articles about agent memory and compare their approaches using source passages.",
+      "tools": [
+        "search",
+        "fetch"
+      ],
+      "expected": "Returns matching articles and cited passages; the agent performs the comparison."
+    },
+    {
+      "prompt": "Find Recluse Studio articles about knowledge management.",
+      "tools": [
+        "search"
+      ],
+      "expected": "Returns relevant published articles with attribution."
+    },
+    {
+      "prompt": "Show the three newest Recluse Studio articles.",
+      "tools": [
+        "latest_posts"
+      ],
+      "expected": "Returns three articles in descending publication-date order."
+    },
+    {
+      "prompt": "Find articles related to the newest post through its curated topics.",
+      "tools": [
+        "latest_posts",
+        "related_posts"
+      ],
+      "expected": "Returns related posts and shared topic labels."
+    }
+  ],
+  "negative": [
+    {
+      "prompt": "Read unpublished-draft from the archive.",
+      "tool": "fetch",
+      "arguments": {
+        "id": "unpublished-draft"
+      },
+      "expected": "Returns an article-not-found error."
+    },
+    {
+      "prompt": "Read ../../private from the archive.",
+      "tool": "fetch",
+      "arguments": {
+        "id": "../../private"
+      },
+      "expected": "Rejects the article identifier."
+    },
+    {
+      "prompt": "Return 1000 search results about memory.",
+      "tool": "search",
+      "arguments": {
+        "query": "memory",
+        "limit": 1000
+      },
+      "expected": "Rejects the result count outside 1\u20138."
+    }
+  ]
+}
