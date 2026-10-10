@@ -14,33 +14,39 @@ Prepared on 10 October 2026 for the Recluse Studio public archive connector.
 
 ## Current portal status
 
-No provider review submission has been sent. The public GitHub release and hosted service are distributed independently of directory review.
+Checked on 10 October 2026. All three provider accounts are signed in.
 
-| Provider | Submission portal | Observed account step |
+| Provider | Completed | Remaining |
 | --- | --- | --- |
-| OpenAI | https://platform.openai.com/plugins | Microsoft sign-in requests the owner’s fingerprint, PIN, or security key. |
-| Claude | https://claude.ai/directory/manage/new | Session requires sign-in again. |
-| Muse | https://muse.ai/platform | Connector platform requests sign-in with an email or mobile number. |
+| OpenAI | Portable 0.1.2 uploaded; metadata, skill, and MCP checks passed; domain verified; five positive and three invocation-negative cases, release notes, and ChatGPT walkthrough saved. | Final legal attestations and submission. |
+| Claude | GitHub subfolder validated; listing links, icon, licence, data handling, and contact fields prepared. | Software Directory Terms and Policy acceptance, then submission. |
+| Muse | Overview, logo, public MCP connection, documentation, contact, privacy, and terms fields completed. | Connector Terms acceptance, then submission. |
+
+All three drafts are complete. Drew was asked for the browser-required legal confirmation and OpenAI content declarations. No review submission has been sent while that confirmation is pending.
 
 ## OpenAI
 
-Upload the portable ZIP. Use listing.json and test-cases.json. The portal’s developer verification, selected organization/project, category, domain challenge, and policy attestations depend on the signed-in account. Publish the exact domain challenge supplied by the portal at /.well-known/openai-apps-challenge; no challenge token has been issued yet.
+The submission uses the portable 0.1.2 ZIP and the verified developer identity shown in the portal. Metadata uses Education & Research. The domain challenge is deployed at /.well-known/openai-apps-challenge and verified by OpenAI.
 
-The review also requires a recording that demonstrates the test cases and plugin functionality. Record the supported-platform interaction after connection, then add its accessible URL to demoVideoURL. The MCP verification script supplies service evidence; it does not stand in for that recording.
+The five positive cases cover search, article retrieval, recent posts, and related posts. The three negative cases cover publishing, private drafts, and live retailer purchases; they describe requests that should not invoke this plugin. Separate input-validation cases remain in test-cases.json.
 
-Sources: https://developers.openai.com/plugins/deploy/submission and https://developers.openai.com/plugins/deploy/connect-chatgpt.
+Review draft: https://platform.openai.com/plugins/manage/plugin_asdk_app_6aca82cb14ac8191a7b4c029033f6683
+
+Review walkthrough: https://github.com/recluse-studio/agent-discovery/releases/download/v0.1.2/recluse-studio-chatgpt-walkthrough.mp4
+
+The 77-second video records ChatGPT using the connected Recluse Studio Archive. The responses cite the Donner B1 review, list recent articles, return a related article with shared topics, compare agent-memory articles, and identify knowledge-management articles. The demonstration uses the Sites-managed authenticated /mcp connection. The directory submission uses the separately verified public /api/mcp endpoint. Both transports call the same archive tools. The visible conversation is retained in evidence/chatgpt-demonstration.txt.
 
 ## Claude
 
-Submit the GitHub-hosted plugin bundle or its single remote MCP connector. The plugin includes a source-reading skill. Public tool discovery exposes descriptions, titles, and read-only annotations. The portal requires the developer’s plan/account eligibility, verified contacts and control of the service, and acceptance of the Software Directory Terms.
+Validated source: https://github.com/recluse-studio/agent-discovery/tree/main/plugins/recluse-studio
 
-Sources: https://claude.com/resources/articles/build-plugins-for-claude and https://support.claude.com/en/articles/13145358-anthropic-software-directory-policy.
+The installable bundle contains nine files and is 18 kB. Seven validator checks passed. Five nonblocking warnings concern directory-only fields ignored by Claude Code at runtime. No credential or dependency review hold remains.
+
+The listing is eligible for Claude Code, Cowork, and Claude apps according to the portal. The bundle contains one source-reading skill and one remote MCP server.
 
 ## Muse
 
-Use the public endpoint, tool documentation, data-handling description, privacy and attribution URLs, support channels, and examples. The signed-in portal requests business verification and authority to submit, developer terms, and reviewer demonstration material. This connector uses public read-only data and requires no integration credentials or user account.
-
-Source: https://muse.ai/platform/docs.
+The connector uses the public endpoint with no authentication or payment requirement. Three example prompts cover article comparison, a specific product review, and topic-based retrieval. The final review page contains the uploaded 512 × 512 icon and all required contact and policy fields.
 
 ## Data-processing answers
 

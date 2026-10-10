@@ -1,0 +1,45 @@
+{
+  "checkedOn": "2026-10-10",
+  "repository": "https://github.com/recluse-studio/agent-discovery",
+  "release": "https://github.com/recluse-studio/agent-discovery/releases/tag/v0.1.2",
+  "deployedSourceCommit": "be0de1bf1baff3a0514f8e9bae2a4b34dddb2918",
+  "siteVersion": 5,
+  "deploymentId": "appgdep_6aca83a062088191b4234b3f77ef16eb",
+  "publicEndpoint": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/api/mcp",
+  "demoVideoURL": "https://github.com/recluse-studio/agent-discovery/releases/download/v0.1.2/recluse-studio-chatgpt-walkthrough.mp4",
+  "openai": {
+    "status": "draft_complete_awaiting_agreement_confirmation",
+    "pluginId": "plugin_asdk_app_6aca82cb14ac8191a7b4c029033f6683",
+    "draftId": "appsub_6aca82cb14d88191aea43bc31e99a170",
+    "packageVersion": "0.1.2",
+    "domainVerified": true,
+    "metadataCheck": "passed",
+    "skillCheck": "passed",
+    "mcpScan": "no_findings",
+    "reviewInformation": "saved"
+  },
+  "claude": {
+    "status": "draft_complete_awaiting_agreement_confirmation",
+    "source": "https://github.com/recluse-studio/agent-discovery/tree/main/plugins/recluse-studio",
+    "validatedCommit": "f819719",
+    "validatorChecksPassed": 7,
+    "nonblockingWarnings": 5
+  },
+  "muse": {
+    "status": "draft_complete_awaiting_agreement_confirmation",
+    "stage": "final_review"
+  },
+  "chatgptDemonstration": {
+    "conversationURL": "https://chatgpt.com/c/6aca847c-97fc-83ea-8021-2f28e03c1dcb",
+    "connectionName": "Recluse Studio Archive",
+    "endpointPath": "/mcp",
+    "toolsDemonstrated": [
+      "search",
+      "fetch",
+      "latest_posts",
+      "related_posts"
+    ],
+    "visibleTranscript": "evidence/chatgpt-demonstration.txt"
+  },
+  "reviewSubmissionsSent": false
+}
