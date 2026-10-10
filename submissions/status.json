@@ -8,7 +8,7 @@
   "publicEndpoint": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/api/mcp",
   "demoVideoURL": "https://github.com/recluse-studio/agent-discovery/releases/download/v0.1.2/recluse-studio-chatgpt-walkthrough.mp4",
   "openai": {
-    "status": "draft_complete_awaiting_agreement_confirmation",
+    "status": "in_review",
     "pluginId": "plugin_asdk_app_6aca82cb14ac8191a7b4c029033f6683",
     "draftId": "appsub_6aca82cb14d88191aea43bc31e99a170",
     "packageVersion": "0.1.2",
@@ -16,18 +16,30 @@
     "metadataCheck": "passed",
     "skillCheck": "passed",
     "mcpScan": "no_findings",
-    "reviewInformation": "saved"
+    "reviewInformation": "saved",
+    "portalVersionLabel": "1.0.0",
+    "receiptURL": "https://platform.openai.com/plugins/manage/plugin_asdk_app_6aca82cb14ac8191a7b4c029033f6683",
+    "publication": "not_published"
   },
   "claude": {
-    "status": "draft_complete_awaiting_agreement_confirmation",
+    "status": "in_review",
     "source": "https://github.com/recluse-studio/agent-discovery/tree/main/plugins/recluse-studio",
     "validatedCommit": "f819719",
     "validatorChecksPassed": 7,
-    "nonblockingWarnings": 5
+    "nonblockingWarnings": 5,
+    "receiptURL": "https://claude.ai/directory/manage/plugins/722d7a2e-db83-42d6-ac68-67057dadbf1e",
+    "submissionId": "722d7a2e-db83-42d6-ac68-67057dadbf1e",
+    "scannedCommit": "85ae94fdae77ecefd95b420200785576ed12ffb1",
+    "securityScan": "passed",
+    "publication": "not_live",
+    "updates": "waiting_for_first_github_webhook_delivery"
   },
   "muse": {
-    "status": "draft_complete_awaiting_agreement_confirmation",
-    "stage": "final_review"
+    "status": "submitted",
+    "stage": "confirmation",
+    "receiptURL": "https://muse.ai/platform/submissions/ff26e4be-4253-4077-ab3f-bc7b029e9411/confirmation",
+    "submissionId": "ff26e4be-4253-4077-ab3f-bc7b029e9411",
+    "confirmation": "We’ll review Recluse Studio and get in touch."
   },
   "chatgptDemonstration": {
     "conversationURL": "https://chatgpt.com/c/6aca847c-97fc-83ea-8021-2f28e03c1dcb",
@@ -41,5 +53,6 @@
     ],
     "visibleTranscript": "evidence/chatgpt-demonstration.txt"
   },
-  "reviewSubmissionsSent": false
+  "reviewSubmissionsSent": true,
+  "submissionActor": "user"
 }

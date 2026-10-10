@@ -16,13 +16,13 @@ Prepared on 10 October 2026 for the Recluse Studio public archive connector.
 
 Checked on 10 October 2026. All three provider accounts are signed in.
 
-| Provider | Completed | Remaining |
+| Provider | Verified status | Receipt |
 | --- | --- | --- |
-| OpenAI | Portable 0.1.2 uploaded; metadata, skill, and MCP checks passed; domain verified; five positive and three invocation-negative cases, release notes, and ChatGPT walkthrough saved. | Final legal attestations and submission. |
-| Claude | GitHub subfolder validated; listing links, icon, licence, data handling, and contact fields prepared. | Software Directory Terms and Policy acceptance, then submission. |
-| Muse | Overview, logo, public MCP connection, documentation, contact, privacy, and terms fields completed. | Connector Terms acceptance, then submission. |
+| OpenAI | In review; MCP configured; not published. | [Submission](https://platform.openai.com/plugins/manage/plugin_asdk_app_6aca82cb14ac8191a7b4c029033f6683) |
+| Claude | In review; security scan passed; not live. | [Submission](https://claude.ai/directory/manage/plugins/722d7a2e-db83-42d6-ac68-67057dadbf1e) |
+| Muse | Submission received; review pending. | [Confirmation](https://muse.ai/platform/submissions/ff26e4be-4253-4077-ab3f-bc7b029e9411/confirmation) |
 
-All three drafts are complete. Drew was asked for the browser-required legal confirmation and OpenAI content declarations. No review submission has been sent while that confirmation is pending.
+Drew completed the final submissions. Each provider's visible portal confirmed receipt on 10 October 2026. Local screenshots are retained under outputs/submission-proof/. The public service and GitHub release remain available during directory review.
 
 ## OpenAI
 
@@ -30,7 +30,7 @@ The submission uses the portable 0.1.2 ZIP and the verified developer identity s
 
 The five positive cases cover search, article retrieval, recent posts, and related posts. The three negative cases cover publishing, private drafts, and live retailer purchases; they describe requests that should not invoke this plugin. Separate input-validation cases remain in test-cases.json.
 
-Review draft: https://platform.openai.com/plugins/manage/plugin_asdk_app_6aca82cb14ac8191a7b4c029033f6683
+Review submission: https://platform.openai.com/plugins/manage/plugin_asdk_app_6aca82cb14ac8191a7b4c029033f6683
 
 Review walkthrough: https://github.com/recluse-studio/agent-discovery/releases/download/v0.1.2/recluse-studio-chatgpt-walkthrough.mp4
 
@@ -42,11 +42,11 @@ Validated source: https://github.com/recluse-studio/agent-discovery/tree/main/pl
 
 The installable bundle contains nine files and is 18 kB. Seven validator checks passed. Five nonblocking warnings concern directory-only fields ignored by Claude Code at runtime. No credential or dependency review hold remains.
 
-The listing is eligible for Claude Code, Cowork, and Claude apps according to the portal. The bundle contains one source-reading skill and one remote MCP server.
+The listing names Claude Code, Cowork, and Claude apps as its intended surfaces. The bundle contains one source-reading skill and one remote MCP server. The submitted version is v0.1.1 at 85ae94f, and its security scan passed. The portal records the publication request and waits for an Anthropic reviewer. Automatic GitHub updates await the first signed webhook delivery.
 
 ## Muse
 
-The connector uses the public endpoint with no authentication or payment requirement. Three example prompts cover article comparison, a specific product review, and topic-based retrieval. The final review page contains the uploaded 512 × 512 icon and all required contact and policy fields.
+The connector uses the public endpoint with no authentication or payment requirement. Three example prompts cover article comparison, a specific product review, and topic-based retrieval. The submitted listing includes the 512 × 512 icon and all required contact and policy fields. Muse issued confirmation ff26e4be-4253-4077-ab3f-bc7b029e9411.
 
 ## Data-processing answers
 
