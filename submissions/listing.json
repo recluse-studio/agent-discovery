@@ -1,6 +1,6 @@
 {
   "displayName": "Recluse Studio",
-  "shortDescription": "Search Recluse Studio articles and read cited source passages.",
+  "shortDescription": "Search Recluse Studio posts",
   "longDescription": "Search Recluse Studio\u2019s published research and build reports on AI, knowledge management, music equipment, and creative work. Retrieve articles in numbered passages with original source links, author attribution, publication dates, and canonical URLs. Find recent posts and related articles through the publication\u2019s curated topics. The connector provides public, read-only access and requires no login.",
   "developerName": "Recluse Studio",
   "websiteURL": "https://recluse-agent-discovery.drewwiberg.chatgpt.site",
@@ -14,5 +14,6 @@
   "testCases": "test-cases.json",
   "demoVideoURL": null,
   "demoVideoStatus": "Record the required supported-platform demonstration after account sign-in and plugin connection.",
-  "categoryStatus": "Choose from the portal\u2019s current category options after sign-in."
+  "categoryStatus": "Education & Research is an accepted OpenAI directory category.",
+  "category": "Education & Research"
 }

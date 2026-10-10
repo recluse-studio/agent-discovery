@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "recluse-studio",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Search and read Recluse Studio's published articles, retrieve source passages, and follow related work with original attribution.",
   "author": {
     "name": "Drew Wiberg",
@@ -9,5 +9,27 @@
   },
   "homepage": "https://recluse-agent-discovery.drewwiberg.chatgpt.site",
   "repository": "https://github.com/recluse-studio/agent-discovery",
-  "license": "MIT"
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Recluse Studio",
+        "longDescription": "Search Recluse Studio\u2019s published research and build reports on AI, knowledge management, music equipment, and creative work. Retrieve articles in numbered passages with original source links, author attribution, publication dates, and canonical URLs. Find recent posts and related articles through the publication\u2019s curated topics. The connector provides public, read-only access and requires no login.",
+        "developerName": "Recluse Studio",
+        "websiteURL": "https://recluse-agent-discovery.drewwiberg.chatgpt.site",
+        "supportURL": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/support",
+        "privacyPolicyURL": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/privacy",
+        "termsOfServiceURL": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/terms",
+        "shortDescription": "Search Recluse Studio posts",
+        "category": "Education & Research",
+        "capabilities": [
+          "Search published articles",
+          "Read attributed passages",
+          "Find recent and related posts"
+        ],
+        "logo": "./logo.png",
+        "composerIcon": "./logo.png"
+      }
+    }
+  }
 }

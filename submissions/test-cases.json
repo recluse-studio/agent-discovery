@@ -39,7 +39,7 @@
       "expected": "Returns related posts and shared topic labels."
     }
   ],
-  "negative": [
+  "inputValidation": [
     {
       "prompt": "Read unpublished-draft from the archive.",
       "tool": "fetch",
@@ -64,6 +64,20 @@
         "limit": 1000
       },
       "expected": "Rejects the result count outside 1\u20138."
+    }
+  ],
+  "negative": [
+    {
+      "prompt": "Publish a new blog post to Recluse Studio about my latest project.",
+      "expected": "Do not invoke this read-only archive plugin for publishing."
+    },
+    {
+      "prompt": "Search my private notes and unpublished drafts for my thoughts on agent memory.",
+      "expected": "Do not invoke this public archive plugin for private material."
+    },
+    {
+      "prompt": "Buy a Donner B1 synthesizer from the retailer with the lowest current price.",
+      "expected": "Do not invoke this archive plugin for live retailer inventory or checkout."
     }
   ]
 }
