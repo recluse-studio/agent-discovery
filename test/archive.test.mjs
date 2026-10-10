@@ -71,6 +71,17 @@ test("failed refresh reports failure and does not return an expired snapshot", a
   await assert.rejects(archive.snapshot(), /HTTP 503/);
 });
 
+test("public loading rejects redirects without following their destination", async () => {
+  const calls = [];
+  const archive = new PublicArchive({ fetcher: async (url, options) => {
+    calls.push(url);
+    assert.equal(options.redirect, "manual");
+    return new Response(null, { status: 302, headers: { Location: "https://foreign.example/private" } });
+  } });
+  await assert.rejects(archive.snapshot(), /HTTP 302/);
+  assert.deepEqual(calls, [INDEX_URL]);
+});
+
 test("search returns matching passages, empty misses, and shared-topic relations", () => {
   const posts = fixtureSnapshot().posts;
   const results = searchPosts(posts, "durable memory", 1);

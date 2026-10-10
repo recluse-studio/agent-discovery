@@ -18,7 +18,7 @@
     "Find Recluse Studio's work on knowledge management, then retrieve articles connected through the same curated topics."
   ],
   "review_state": "public release preparation; provider review not submitted",
-  "endpoint": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/mcp",
+  "endpoint": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/api/mcp",
   "repository": "https://github.com/recluse-studio/agent-discovery",
   "support_url": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/support",
   "privacy_policy_url": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/privacy",

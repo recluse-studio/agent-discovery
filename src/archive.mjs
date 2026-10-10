@@ -118,7 +118,7 @@ export function parseArticle(html, entry) {
 async function readPublicText(url, fetcher) {
   const response = await fetcher(url, {
     headers: { "User-Agent": "RecluseStudioArchive/0.1 (+https://recluse.studio/blog/)" },
-    redirect: "error",
+    redirect: "manual",
     signal: AbortSignal.timeout(20_000),
   });
   if (!response.ok) throw new Error("Public archive request failed with HTTP " + response.status + ": " + url);

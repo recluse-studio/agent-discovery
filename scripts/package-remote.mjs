@@ -7,9 +7,9 @@ const root = fileURLToPath(new URL("../", import.meta.url));
 
 export function remoteConfigurations(endpoint) {
   const url = new URL(endpoint);
-  if (url.protocol !== "https:" || url.pathname !== "/mcp" || url.search || url.hash ||
+  if (url.protocol !== "https:" || !["/mcp", "/api/mcp"].includes(url.pathname) || url.search || url.hash ||
       url.username || url.password || ["localhost", "127.0.0.1", "[::1]"].includes(url.hostname)) {
-    throw new Error("Provide the public HTTPS connector URL ending in /mcp.");
+    throw new Error("Provide the public HTTPS connector URL ending in /mcp or /api/mcp.");
   }
   return {
     portable: {

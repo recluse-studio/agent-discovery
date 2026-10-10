@@ -6,7 +6,7 @@ Search Recluse Studio’s published articles, read their source passages, and ci
 
 Public Streamable HTTP endpoint:
 
-    https://recluse-agent-discovery.drewwiberg.chatgpt.site/mcp
+    https://recluse-agent-discovery.drewwiberg.chatgpt.site/api/mcp
 
 The service requires no account, API key, or OAuth login. Add that endpoint in a client that supports remote MCP. Download the portable Agent Plugins and Claude packages from [Releases](https://github.com/recluse-studio/agent-discovery/releases).
 
@@ -71,7 +71,7 @@ The Node server checks Host and Origin. Both HTTP transports limit request bodie
     npm test
     npm run check:live
     npm run check:deployed
-    npm run package:remote -- https://recluse-agent-discovery.drewwiberg.chatgpt.site/mcp
+    npm run package:remote -- https://recluse-agent-discovery.drewwiberg.chatgpt.site/api/mcp
 
 The local live check starts and closes a temporary HTTP service. The deployed check uses the public HTTPS endpoint without credentials. Evidence is saved under evidence/.
 

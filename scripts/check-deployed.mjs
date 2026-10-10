@@ -4,7 +4,7 @@ import { Client, StreamableHTTPClientTransport } from "@modelcontextprotocol/cli
 
 const origin = "https://recluse-agent-discovery.drewwiberg.chatgpt.site";
 const client = new Client({ name: "recluse-public-release-check", version: "1.0.0" });
-const evidence = { checked_at: new Date().toISOString(), endpoint: origin + "/mcp", authentication: "none", checks: [] };
+const evidence = { checked_at: new Date().toISOString(), endpoint: origin + "/api/mcp", authentication: "none", checks: [] };
 try {
   const response = await fetch(origin + "/health");
   assert.equal(response.status, 200);

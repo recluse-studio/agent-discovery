@@ -20,6 +20,7 @@ test("remote packages contain only the configured service and research skill", a
     assert.equal(portable.mcpServers["recluse-studio"].url, "https://connector.example/mcp");
     const claude = JSON.parse(await readFile(join(output, "claude/.mcp.json"), "utf8"));
     assert.equal(claude.mcpServers["recluse-studio"].type, "http");
+    assert.equal(remoteConfigurations("https://connector.example/api/mcp").claude.mcpServers["recluse-studio"].url, "https://connector.example/api/mcp");
     for (const url of ["http://remote.example/mcp", "https://localhost/mcp", "https://remote.example/other", "https://user:secret@remote.example/mcp"]) {
       assert.throws(() => remoteConfigurations(url));
     }
