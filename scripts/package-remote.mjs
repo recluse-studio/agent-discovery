@@ -20,7 +20,7 @@ export function remoteConfigurations(endpoint) {
   };
 }
 
-export async function packageRemote(endpoint, outputRoot = resolve(root, "dist")) {
+export async function packageRemote(endpoint, outputRoot = resolve(root, "outputs", "plugin-packages")) {
   const configs = remoteConfigurations(endpoint);
   await mkdir(outputRoot, { recursive: true });
   const output = await mkdtemp(join(outputRoot, "remote-"));

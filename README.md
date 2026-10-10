@@ -75,7 +75,7 @@ The Node server checks Host and Origin. Both HTTP transports limit request bodie
 
 The local live check starts and closes a temporary HTTP service. The deployed check uses the public HTTPS endpoint without credentials. Evidence is saved under evidence/.
 
-The package command writes portable and Claude ZIPs plus submission metadata into a new dist/remote-* directory. ZIPs contain connection manifests and the research skill.
+The package command writes portable and Claude ZIPs plus submission metadata into a new outputs/plugin-packages/remote-* directory. ZIPs contain connection manifests and the research skill.
 
 ## Publication
 
