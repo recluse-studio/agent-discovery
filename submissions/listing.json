@@ -1,0 +1,18 @@
+{
+  "displayName": "Recluse Studio",
+  "shortDescription": "Search Recluse Studio articles and read cited source passages.",
+  "longDescription": "Search Recluse Studio\u2019s published research and build reports on AI, knowledge management, music equipment, and creative work. Retrieve articles in numbered passages with original source links, author attribution, publication dates, and canonical URLs. Find recent posts and related articles through the publication\u2019s curated topics. The connector provides public, read-only access and requires no login.",
+  "developerName": "Recluse Studio",
+  "websiteURL": "https://recluse-agent-discovery.drewwiberg.chatgpt.site",
+  "supportURL": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/support",
+  "privacyPolicyURL": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/privacy",
+  "termsOfServiceURL": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/terms",
+  "endpoint": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/api/mcp",
+  "authentication": "none",
+  "logo": "logo.png",
+  "releaseNotes": "Initial release with search, paginated article retrieval, recent posts, curated-topic relations, and original attribution.",
+  "testCases": "test-cases.json",
+  "demoVideoURL": null,
+  "demoVideoStatus": "Record the required supported-platform demonstration after account sign-in and plugin connection.",
+  "categoryStatus": "Choose from the portal\u2019s current category options after sign-in."
+}

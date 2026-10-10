@@ -1,14 +1,15 @@
-# First local build
+# Public release verification
 
-Verified on 10 October 2026.
+Verified 10 October 2026.
 
-- Six archive checks passed: canonical paths and duplicates; article text and attribution; complete splitting of long paragraphs; shared refresh and withdrawn posts; refresh failure; search and curated-topic relations.
-- The official MCP client passed tool discovery and all four tools through local stdio and Streamable HTTP. Article pagination, unknown article errors, foreign Host and Origin rejection, invalid JSON, request size, and HTTP method handling passed.
-- The remote package check passed. Both generated ZIP formats contained only their manifests, connection configuration, and research skill. The test removed its temporary packages.
-- Claude's strict plugin manifest validator passed.
-- The live HTTP check loaded 194 public articles and retrieved attributed passages for Donner B1, agent memory, and knowledge management. Exact results are in live-check.json.
-- A separate bounded source review confirmed the fixed public-origin boundary, absence of local draft access, attribution extraction, and pagination.
+- Eleven focused tests pass: extraction and attribution, public-source restrictions, redirect rejection, refresh/removal behavior, search, pagination, package contents, Node stdio/HTTP, and the Web-standard hosted transport.
+- Claude’s strict plugin and marketplace manifest validators pass.
+- The connected Sites deployment succeeded. The public /api/mcp endpoint passed official MCP client initialization, tool discovery, search, fetch with pagination, latest_posts, and related_posts without credentials.
+- The live archive contained 196 published articles. Five positive scenarios and three invalid-request cases passed. Results preserve Drew Wiberg’s byline and the canonical public article URL.
+- Public homepage, health, privacy, attribution, support, and favicon routes returned HTTP 200.
+- The public page rendered in the browser with Helvetica Neue and a minimum observed text size of 14 pixels. Source CSS defines the shared 12-pixel floor; the page’s narrow-screen rule introduces no smaller font sizes.
+- GitHub private vulnerability reporting is enabled.
 
-The two portable JSON manifests were checked against the published format by inspection. Automated JSON Schema validation was not run because the available Python environments lacked jsonschema.
+The Sites-managed /mcp route uses platform authentication. The public read-only connection is /api/mcp; installation files and release packages use that URL.
 
-Temporary test servers and subprocesses were closed. The public connector has not been hosted or submitted to a provider directory. No Instagram account was created.
+See public-check.json for the actual live results. Provider directory reviews have not been submitted: their portals require account sign-in. OpenAI’s account-dependent verification, challenge token, and supported-platform demo remain to be completed after login.

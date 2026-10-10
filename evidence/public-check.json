@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-10T17:11:23.368Z",
+  "endpoint": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/api/mcp",
+  "authentication": "none",
+  "checks": [
+    {
+      "query": "Donner B1",
+      "title": "Donner B1: The Controls Change the Verdict",
+      "url": "https://recluse.studio/blog/donner-b1-the-controls-change-the-verdict/",
+      "author": "Drew Wiberg",
+      "date": "2026-10-09",
+      "passage": "Scope note: This literature review compares twelve published use records for the Donner Essential B1, including its sequencer, physical controls, firmware and recording conditions. The evidence concerns the reviewers’ units and setups; it does not establish the condition of every B1 currently shipped."
+    },
+    {
+      "query": "agent memory",
+      "title": "Agent Memory Now Includes Retrieval Decisions and Learned Procedures",
+      "url": "https://recluse.studio/blog/agent-memory-retrieval-decisions-learned-procedures/",
+      "author": "Drew Wiberg",
+      "date": "2026-07-28",
+      "passage": "Scope note: This review covers how seven recent preprints define, retrieve, test, and revise memory for long-running AI agents. It does not compare commercial memory products or establish one correct architecture for every agent."
+    },
+    {
+      "query": "knowledge management",
+      "title": "Information Governance and Knowledge Management Are Related Work",
+      "url": "https://recluse.studio/blog/km-information-governance-and-knowledge-management/",
+      "author": "Drew Wiberg",
+      "date": "2026-08-26",
+      "passage": "Organizations often use one word when they need three. A team asks for knowledge management because it cannot find an old decision; another asks for records management because it wants people to reuse a practical method; and the archive appears only after someone discovers that a file, project, or person’s account should have survived longer than it did."
+    }
+  ],
+  "health": {
+    "status": "ready",
+    "publication": "Recluse Studio",
+    "articles": 196,
+    "retrieved_at": "2026-10-10T17:11:30.483Z"
+  },
+  "latest": [
+    {
+      "title": "AIYIMA A07 MAX Review: The Knob and the Load",
+      "url": "https://recluse.studio/blog/aiyima-a07-max-review-the-knob-and-the-load/",
+      "date": "2026-10-10"
+    },
+    {
+      "title": "Fosi Audio V3 Review: The Supply and Revision Matter",
+      "url": "https://recluse.studio/blog/fosi-audio-v3-review-the-supply-and-revision-matter/",
+      "date": "2026-10-10"
+    },
+    {
+      "title": "Donner B1: The Controls Change the Verdict",
+      "url": "https://recluse.studio/blog/donner-b1-the-controls-change-the-verdict/",
+      "date": "2026-10-09"
+    }
+  ],
+  "related_count": 1,
+  "negative_checks": [
+    "unknown article rejected",
+    "path traversal rejected",
+    "excess result count rejected"
+  ],
+  "result": "passed"
+}

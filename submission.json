@@ -17,11 +17,11 @@
     "Read Recluse Studio's Donner B1 review and identify what the source accounts say about the controls.",
     "Find Recluse Studio's work on knowledge management, then retrieve articles connected through the same curated topics."
   ],
-  "review_state": "public release preparation; provider review not submitted",
+  "review_state": "public endpoint verified; provider review awaits account sign-in and submission",
   "endpoint": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/api/mcp",
   "repository": "https://github.com/recluse-studio/agent-discovery",
   "support_url": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/support",
   "privacy_policy_url": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/privacy",
   "terms_url": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/terms",
-  "logo_url": "https://recluse-agent-discovery.drewwiberg.chatgpt.site/favicon.svg"
+  "logo_url": "https://github.com/recluse-studio/agent-discovery/raw/main/submissions/logo.png"
 }
